@@ -67,4 +67,14 @@ $(function(){
     })
 });
 
+$('#exampleModalCenter').on('exampleModalCenter', function () {
+  $('#myInput').trigger('focus')
+})
+// Handles the delete method
+$("#exit-button").addEventListener("click", function(event){
+
+    (event.this).parent.remove();
+
+})
+
 
