@@ -15,9 +15,10 @@ function addUser(){
     "<td>" + hourWage.val() + "</td>" +
     "<td>" + dueDate.val() + "</td>" +
     "<td>" + daysUntilDue + "</td>" +
+    "<td>" + "<button id='exit-button'>"+ "Delete"+"</button>" + "</td>" +
     "</tr>" );
     dialog.dialog( "close" );
-    
+
 }
 
 // Instantiates the popup window 
@@ -49,5 +50,12 @@ thisForm.addEventListener("submit", function(event){
 $( "#create-user" ).button().on( "click", function() {
     dialog.dialog( "open" );
 });
+
+// Handles the delete method
+$("#exit-button").addEventListener("click", function(event){
+
+    (event.this).parent.remove();
+
+})
 
 
