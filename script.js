@@ -50,4 +50,6 @@ $( "#create-user" ).button().on( "click", function() {
     dialog.dialog( "open" );
 });
 
-
+$('#exampleModalCenter').on('exampleModalCenter', function () {
+  $('#myInput').trigger('focus')
+})
