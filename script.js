@@ -51,11 +51,9 @@ $( "#create-user" ).button().on( "click", function() {
     dialog.dialog( "open" );
 });
 
-<<<<<<< HEAD
 $('#exampleModalCenter').on('exampleModalCenter', function () {
   $('#myInput').trigger('focus')
 })
-=======
 // Handles the delete method
 $("#exit-button").addEventListener("click", function(event){
 
@@ -64,4 +62,3 @@ $("#exit-button").addEventListener("click", function(event){
 })
 
 
->>>>>>> 29c5e5ad9a5e97c50998bf241f015bacb7daa79b
