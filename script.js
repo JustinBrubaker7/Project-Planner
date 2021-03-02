@@ -15,9 +15,10 @@ function addUser(){
     "<td>" + hourWage.val() + "</td>" +
     "<td>" + dueDate.val() + "</td>" +
     "<td>" + daysUntilDue + "</td>" +
+    "<td>" + "<button id='exit-button'>"+ "Delete"+"</button>" + "</td>" +
     "</tr>" );
     dialog.dialog( "close" );
-    
+
 }
 
 // Instantiates the popup window 
@@ -50,6 +51,17 @@ $( "#create-user" ).button().on( "click", function() {
     dialog.dialog( "open" );
 });
 
+<<<<<<< HEAD
 $('#exampleModalCenter').on('exampleModalCenter', function () {
   $('#myInput').trigger('focus')
 })
+=======
+// Handles the delete method
+$("#exit-button").addEventListener("click", function(event){
+
+    (event.this).parent.remove();
+
+})
+
+
+>>>>>>> 29c5e5ad9a5e97c50998bf241f015bacb7daa79b
